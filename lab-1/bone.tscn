@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ktx7uwntngju"]
+
+[node name="bone" type="ColorRect"]
+offset_left = 409.541
+offset_top = 205.352
+offset_right = 561.541
+offset_bottom = 239.352
+color = Color(0.760784, 0.647059, 0.364706, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -27.7711
+offset_top = -14.7484
+offset_right = 19.2289
+offset_bottom = 51.2516
+color = Color(0.760784, 0.647059, 0.364706, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 158.0
+offset_top = -1.00012
+offset_right = 207.0
+offset_bottom = 66.9999
+color = Color(0.760269, 0.645257, 0.3641, 1)

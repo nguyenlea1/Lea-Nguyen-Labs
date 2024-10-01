@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm6jf70bkqijo"]
+
+[ext_resource type="Texture2D" uid="uid://oa36oagge1r3" path="res://frenchie.png" id="1_rrnjs"]
+[ext_resource type="Texture2D" uid="uid://dpafx46w5ax1b" path="res://rug.png" id="2_cvn17"]
+[ext_resource type="PackedScene" uid="uid://ktx7uwntngju" path="res://bone.tscn" id="3_0rqdd"]
+
+[node name="Black-french-bulldog-transparent" type="Sprite2D"]
+position = Vector2(220, 443)
+rotation = -0.127409
+scale = Vector2(0.441808, 0.441808)
+texture = ExtResource("1_rrnjs")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+
+[node name="Rug" type="Sprite2D" parent="Sprite2D2"]
+position = Vector2(1124.13, -100.162)
+rotation = 0.122173
+scale = Vector2(0.897411, 0.810653)
+texture = ExtResource("2_cvn17")
+
+[node name="bone" parent="." instance=ExtResource("3_0rqdd")]
+offset_left = 460.315
+offset_top = 218.702
+offset_right = 612.315
+offset_bottom = 252.702
+
+[node name="bone" parent="bone" instance=ExtResource("3_0rqdd")]
+rotation = 0.270526
+
+[node name="bone" parent="bone/bone" instance=ExtResource("3_0rqdd")]
+offset_left = 338.792
+offset_top = -156.3
+offset_right = 490.792
+offset_bottom = -122.3
+rotation = -0.472984
+
+[node name="bone" parent="bone/bone/bone" instance=ExtResource("3_0rqdd")]
+offset_left = -1486.27
+offset_top = -403.596
+offset_right = -1334.27
+offset_bottom = -369.596
+rotation = -2.63545
