@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcvyyvvv15k07"]
+
+[ext_resource type="Script" path="res://icon.gd" id="2_kt43a"]
+[ext_resource type="Texture2D" uid="uid://d3tlpxvnpa6vh" path="res://ball.png" id="3_ce4s1"]
+[ext_resource type="Texture2D" uid="uid://cbmw2qoo34ing" path="res://grass.webp" id="3_nd3hb"]
+[ext_resource type="Script" path="res://ball.gd" id="4_b7hdq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_40rao"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(490, 342)
+texture = SubResource("CompressedTexture2D_40rao")
+script = ExtResource("2_kt43a")
+
+[node name="Grass" type="Sprite2D" parent="."]
+position = Vector2(580, 475)
+scale = Vector2(1.4559, 1.52482)
+texture = ExtResource("3_nd3hb")
+
+[node name="Ball" type="Sprite2D" parent="."]
+position = Vector2(877, 312)
+scale = Vector2(0.2275, 0.2275)
+texture = ExtResource("3_ce4s1")
+script = ExtResource("4_b7hdq")
